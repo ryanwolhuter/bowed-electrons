@@ -1,5 +1,5 @@
 <template>
-  <Particles id="tsparticles" :options="particlesOptions" />
+  <!-- <Particles id="tsparticles" :options="particlesOptions" /> -->
   <Slide>
     <h1>Toolset for the Internet of Musical Things</h1>
   </Slide>
@@ -32,10 +32,11 @@
   </Slide>
   <Slide>
     <h2>What is a Distributed System?</h2>
+    <p>A system whose components are located on separate computers.</p>
     <p>
-      A system whose components are located on separate computers. 
+      These computers are usually physically separate, sometimes over huge
+      distances.
     </p>
-    <p>These computers are usually physically separate, sometimes over huge distances.</p>
     <p>These components communicate by passing messages.</p>
     <h3>Benefits</h3>
     <div class="distributed">
@@ -44,7 +45,8 @@
         <li>Reliable (fault-tolerant)</li>
         <li>Efficient (concurrent)</li>
       </ul>
-      <img src="./assets/distributed.png" class="distributed" />    </div>
+      <img src="./assets/distributed.png" class="distributed" />
+    </div>
   </Slide>
   <Slide>
     <h1>Joe Armstrong</h1>
@@ -54,19 +56,19 @@
   <Slide>
     <h2>Open Sound Control</h2>
     <p>
-      Open Sound Control (OSC) is a communication protocol for sending
-      information across a computer network. It can facilitate messages among
-      computers, synthesizers, and other multimedia devices.
+      Open Sound Control (OSC) is a protocol for communication among computers.
     </p>
 
     <p>
-      OSC is the lifeblood of SuperCollider, managing the communication between
-      the server and the application language.
+      It can facilitate messages among computers, synthesizers, and other
+      multimedia devices.
     </p>
 
+    <p>It is optimized for modern networking technology.</p>
+
     <p>
-      OSC messages are can take advantage of established net transmission
-      protocols.
+      OSC is an integral part SuperCollider, where it is used to facilitate
+      communication between the server and the sound engine.
     </p>
   </Slide>
   <Slide>
@@ -78,6 +80,48 @@
       <li>Controlling any electronic device</li>
       <li>Networked LAN musical performances</li>
     </ul>
+  </Slide>
+  <Slide>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">OSC</th>
+          <th scope="col">MIDI</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Message Types</th>
+          <td>
+            Human readable <br />
+            User defined
+          </td>
+          <td>
+            Byte-encoded <br />
+            Pre-determined
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Data Formats</th>
+          <td>Numbers, text, colors, <br />
+          even MIDI</td>
+          <td>1-byte integers (0-127)</td>
+        </tr>
+        <tr>
+          <th scope="row">Data Transfer</th>
+          <td>Local and wide area <br />
+          networks, (UDP, TCP, WebSockets, <br />
+          WebRTC, anything you like)</td>
+          <td>Cable-based transfer</td>
+        </tr>
+        <tr>
+          <th scope="row">Number of Channels</th>
+          <td>Unlimited</td>
+          <td>16</td>
+        </tr>
+      </tbody>
+    </table>
   </Slide>
   <Slide>
     <h2>Common Misconceptions about OSC and MIDI</h2>
