@@ -1,8 +1,7 @@
 <template>
-  <Particles id="tsparticles" :options="particlesOptions" />
+  <!-- <Particles id="tsparticles" :options="particlesOptions" /> -->
   <Slide>
-    <h1>Heading</h1>
-    <p>Text</p>
+    <h1>Toolset for the Internet of Musical Things</h1>
   </Slide>
   <Slide>
     <h1>Heading</h1>
@@ -95,6 +94,11 @@ export default {
   left: 0;
   width: 100vw;
   height: 200vh;
+}
+
+h1 {
+  font-size: 5rem;
+  max-width: 800px;
 }
 
 /* Works on Chrome/Edge/Safari */
