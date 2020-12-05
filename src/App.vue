@@ -2,47 +2,13 @@
   <Particles
     id="tsparticles"
     :options="{
-      background: {
-        color: {
-          value: '#0d47a1',
-        },
-      },
       fpsLimit: 60,
-      interactivity: {
-        detectsOn: 'canvas',
-        events: {
-          onClick: {
-            enable: true,
-            mode: 'push',
-          },
-          onHover: {
-            enable: true,
-            mode: 'repulse',
-          },
-          resize: true,
-        },
-        modes: {
-          bubble: {
-            distance: 400,
-            duration: 2,
-            opacity: 0.8,
-            size: 40,
-          },
-          push: {
-            quantity: 4,
-          },
-          repulse: {
-            distance: 200,
-            duration: 0.4,
-          },
-        },
-      },
       particles: {
         color: {
-          value: '#ffffff',
+          value: '#000000',
         },
         links: {
-          color: '#ffffff',
+          color: '#000000',
           distance: 150,
           enable: true,
           opacity: 0.5,
