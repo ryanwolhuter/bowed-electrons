@@ -194,6 +194,7 @@ export default {
     return {
       particlesOptions: {
       fpsLimit: 60,
+      pauseOnOutsideViewport: true,
       particles: {
         color: {
           value: '#ffffff',
@@ -262,11 +263,21 @@ export default {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 1000vh;
+  height: 1500vh;
 }
 
 h1 {
   font-size: 5rem;
+  max-width: 800px;
+}
+
+h2 {
+  font-size: 3rem;
+  max-width: 800px;
+}
+
+p {
+  font-size: 1.5rem;
   max-width: 800px;
 }
 
