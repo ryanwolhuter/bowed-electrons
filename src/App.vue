@@ -8,6 +8,7 @@
   </Slide>
   <Slide>
     <h2>Synchronization in Musical Performance</h2>
+    <img src="./assets/conductor.gif" />
     <p>
       The conductor does not control the musicians, she simply sends them
       messages with her stick and hopes that they comply.
@@ -26,6 +27,7 @@
   </Slide>
   <Slide>
     <h2>What is a Distributed System?</h2>
+    <img src="./assets/distributed.png" class="distributed" />
     <p>
       A distributed system is a system whose components are located on different
       networked computers, which communicate and coordinate their actions by
@@ -41,6 +43,8 @@
   </Slide>
   <Slide>
     <h1>Joe Armstrong</h1>
+    <img src="./assets/joe_armstrong.jpg" />
+    <img src="./assets/joe_armstrong.png" />
   </Slide>
   <Slide>
     <h2>Open Sound Control</h2>
@@ -279,6 +283,15 @@ h2 {
 p {
   font-size: 1.5rem;
   max-width: 800px;
+}
+
+img {
+  margin: 2rem;
+  border-radius: 1rem;
+}
+
+img.distributed {
+  width: 400px;
 }
 
 /* Works on Chrome/Edge/Safari */
