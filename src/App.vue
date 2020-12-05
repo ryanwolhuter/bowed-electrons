@@ -10,7 +10,6 @@
 
 
 export default {
-
   name: 'App',
   components: {
     Slide
@@ -23,10 +22,14 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: teal;
+  color: #ffffff;
 }
 
 * {
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 </style>

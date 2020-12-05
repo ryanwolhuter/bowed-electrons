@@ -1,7 +1,11 @@
 <template>
   <div class="slide">
     <Particles id="tsparticles" :options="particlesOptions" />
-    <slot></slot>
+    <section class="content">
+      <div class="text">
+        <slot></slot>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -14,10 +18,10 @@ export default {
       fpsLimit: 60,
       particles: {
         color: {
-          value: '#000000',
+          value: '#ffffff',
         },
         links: {
-          color: '#000000',
+          color: '#ffffff',
           distance: 150,
           enable: true,
           opacity: 0.5,
@@ -69,5 +73,21 @@ export default {
 }
 .slide {
   height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  width: 80vw;
+  height: 80vh;
+  padding: 4rem;
+  background: hsla(0, 100%, 100%, 0.5);
+  border-radius: 1rem;
+  backdrop-filter: blur(5px);
+
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 </style>
