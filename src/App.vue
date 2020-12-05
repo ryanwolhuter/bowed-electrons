@@ -64,6 +64,10 @@
       multimedia devices.
     </p>
 
+    <p>
+      OSC is not limited to controlling audio devices, it can control anything.
+    </p>
+
     <p>It is optimized for modern networking technology.</p>
 
     <p>
@@ -74,11 +78,10 @@
   <Slide>
     <h2>Areas of Application</h2>
     <ul>
-      <li>Music, video, lighting control</li>
+      <li>Music, video, and lighting control</li>
       <li>Sensor/gesture-based electronic musical instruments</li>
-      <li>Mapping non-musical data to sound parameters (Sonification)</li>
-      <li>Controlling any electronic device</li>
-      <li>Networked LAN musical performances</li>
+      <li>Mapping non-musical data to sound parameters (sonification)</li>
+      <li>Networked musical performances</li>
     </ul>
   </Slide>
   <Slide>
@@ -117,9 +120,7 @@
         </tr>
         <tr>
           <th scope="row">Transport</th>
-          <td>
-            LAN and Internet (UDP, TCP, WebSockets, WebRTC)
-          </td>
+          <td>LAN and Internet (UDP, TCP, WebSockets, WebRTC)</td>
           <td>Cable-based transfer</td>
         </tr>
         <tr>
@@ -138,21 +139,10 @@
   <Slide>
     <h2>Common Misconceptions about OSC and MIDI</h2>
     <ul>
-      <li>
-        OSC can only be used with UDP - OSC can actually be used with any
-        transmission protocol.
-      </li>
-      <li>Has to be on same device-</li>
-      <li>Message passing isn’t guaranteed with OSC -</li>
-      <li>
-        Message passing is guaranteed with MIDI - MIDI protocol has no way of
-        knowing if messages are being received (an example is the common “Note
-        off” problem)
-      </li>
-      <li>
-        MIDI is faster than OSC- OSC has been proven to be much faster than
-        MIDI, both through cables and across networks.
-      </li>
+      <li>OSC can only be used with UDP.</li>
+      <li>OSC can only be used by applications on the same device.</li>
+      <li>Message passing is guaranteed with MIDI.</li>
+      <li>MIDI is faster than OSC.</li>
     </ul>
   </Slide>
   <Slide>
@@ -174,63 +164,75 @@
   <Slide>
     <h2>The Internet of Musical Things</h2>
     <p>
-      Musical Thing defined as “a computing device capable of sensing,
-      acquiring, processing, or actuating, and exchanging data serving a musical
-      purpose”.
+      Musical Things are devices capable of sensing, processing, and exchanging
+      data for musical purposes.
     </p>
     <p>
-      IoMusT is then the ensemble of interfaces, data and protocols that enable
-      interactions between humans and Musical Things or between Musical Things
-      themselves for composition or participatory performance.
+      IoMusT is the ensemble of interfaces, data and protocols that enable
+      interactions between humans and Musical Things.
     </p>
   </Slide>
   <Slide>
-    <h2>"Challenges" with the Internet of Musical Things</h2>
-    <h3>(and how Elixir can solve them)</h3>
+    <h2>"Challenges"</h2>
+    <p>(and how Elixir can solve them)</p>
+    <ul>
+      <li><em>The IoMusT Ontology (Web Semantics)</em></li>
+      <li><em>IoMusT: Vision and Challenges (IEEE)</em></li>
+    </ul>
+    <p>
+      "For musical applications the latency must be in the order of
+      milliseconds"
+    </p>
+
+    <p>"The synchronization of audio streams produced by devices that don't share the same clock."</p>
+
+    <p>"Even if devices initially share the same clock, they need a re-synchronization procedure from time to time."</p>
+
+    <p>"There are many different audio and visual file formats."</p>
   </Slide>
   <Slide>
     <img src="./assets/server.png" class="server" />
   </Slide>
   <Slide>
     <h2>Research Project</h2>
+    <p>A distributed instrument for an audio-visual composition.</p>
     <p>
-      A distributed instrument for an audio-visual composition.
+      The composition, <em>Anthropogenic Soundscapes for IoMusT</em>, will be a
+      collage of "sound slides" from electro-magnetic radiation recordings and
+      melodies played by SuperCollider.
     </p>
     <p>
-      The composition, <em>Anthropogenic Soundscapes for IoMusT</em>, will be a collage of "sound slides" from electro-magnetic radiation recordings and melodies played by SuperCollider.
-    </p>
-    <p>
-      Our project is open source, and we are inviting other musicians and coders to join us.
+      Our project is open source, and we are inviting other musicians and coders
+      to join us.
     </p>
   </Slide>
   <Slide>
-    <h2>Future Projects with this Toolset</h2>
+    <h2>Future Projects</h2>
     <ul>
       <li>
-        Composition using simultaneously without overloading one computer.
+        Composition with many music programs simultaneously.
       </li>
 
       <li>
-        Worldwide real-time collaboration of electronic musicians, dj’s, visual
-        artists and live coders.
+        Worldwide real-time collaboration of electronic musicians, DJs, visual artists and live coders.
       </li>
 
-      <li>Synchronised performance events in different countries.</li>
+      <li>Synchronized performances in different countries.</li>
 
       <li>
-        Distributed Systems for computationally heavy elements (like AI
-        composition or heavy synthesis algorithms) being calculated on a
-        separate machine so that your computer can just focus on generating the
-        music.
+        Distributing computationally heavy composition and synthesis tasks across multiple machines.
       </li>
     </ul>
   </Slide>
   <Slide>
-    <h1>Toolset</h1>
+    <h1>IoMusT Toolset</h1>
     <ul>
       <li>Open Sound Control (OSC)</li>
       <li>Elixir</li>
-      <li>WebRTC</li>
+      <li>Phoenix</li>
+      <li>Nerves</li>
+      <li>Membrane</li>
+      <li>Raspberry Pi and Beagleboard</li>
     </ul>
   </Slide>
 </template>
@@ -337,6 +339,10 @@ h3 {
   margin-left: 1rem;
 }
 
+ul {
+  list-style: circle;
+}
+
 p,
 li {
   font-size: 1.4rem;
@@ -376,7 +382,8 @@ table {
   border-radius: 1rem;
 }
 
-th, td {
+th,
+td {
   padding: 0.5rem;
   border: 2px solid white;
 }
