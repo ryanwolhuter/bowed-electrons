@@ -3,6 +3,10 @@
     <h1>Heading</h1>
     <p>Text</p>
   </Slide>
+  <Slide>
+    <h1>Heading</h1>
+    <p>Text</p>
+  </Slide>
 </template>
 
 <script>
@@ -29,7 +33,22 @@ export default {
 * {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow-x: hidden;
   box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  width: 0px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 20px;
+  border: 3px solid transparent;
 }
 </style>
