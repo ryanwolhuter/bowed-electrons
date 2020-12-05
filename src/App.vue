@@ -105,7 +105,7 @@
         <tr>
           <th scope="row">Formats</th>
           <td>
-            Numbers, text, colors, <br />
+            Numbers, text, colors (RGBA), <br />
             even MIDI
           </td>
           <td>1-byte integers (0-127)</td>
@@ -118,9 +118,7 @@
         <tr>
           <th scope="row">Transport</th>
           <td>
-            Local and wide area <br />
-            networks, (UDP, TCP, WebSockets, <br />
-            WebRTC, anything you like)
+            LAN and Internet (UDP, TCP, WebSockets, WebRTC)
           </td>
           <td>Cable-based transfer</td>
         </tr>
@@ -131,7 +129,7 @@
         </tr>
         <tr>
           <th scope="row">Transfer Speed</th>
-          <td>Gigabit speed</td>
+          <td>Gigabit</td>
           <td>31,250 bits / second</td>
         </tr>
       </tbody>
@@ -376,6 +374,19 @@ div.distributed {
   display: flex;
   align-items: center;
   max-width: 800px;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid white;
+  border-radius: 1rem;
+}
+
+th, td {
+  padding: 0.5rem;
+  border: 2px solid white;
 }
 
 /* Works on Chrome/Edge/Safari */
