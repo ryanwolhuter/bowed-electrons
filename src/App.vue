@@ -8,38 +8,43 @@
   </Slide>
   <Slide>
     <h2>Synchronization in Musical Performance</h2>
-    <img src="./assets/conductor.gif" />
-    <p>
-      The conductor does not control the musicians, she simply sends them
-      messages with her stick and hopes that they comply.
-    </p>
-    <p>
-      Music is performed by multiple instruments and musicians in real-time.
-    </p>
-    <p>
-      We can learn from the centuries of evolution that gave us the conductor’s
-      baton. The effectiveness of the stick gives us a clue as to how we can
-      control digital musical performances.
-    </p>
+    <div class="synchro__body">
+      <div class="synchro__text">
+        <p>How do we coordinate live musical performances?</p>
+        <p>
+          We use a wireless, analogue communication device:
+          <strong>the stick</strong>.
+        </p>
+        <p>
+          The conductor can't control the musicians directly; she can only send
+          messages.
+        </p>
+        <p>
+          We can learn from the effectiveness of the stick for controlling
+          digital music performances.
+        </p>
+      </div>
+      <img src="./assets/conductor.gif" />
+    </div>
   </Slide>
   <Slide>
     <h1>Message Passing In Music</h1>
   </Slide>
   <Slide>
     <h2>What is a Distributed System?</h2>
-    <img src="./assets/distributed.png" class="distributed" />
     <p>
-      A distributed system is a system whose components are located on different
-      networked computers, which communicate and coordinate their actions by
-      passing messages to one another across space and time. The components work
-      together to achieve a common goal.
+      A system whose components are located on separate computers. 
     </p>
-    <h2>Benefits</h2>
-    <ul>
-      <li>Scalable</li>
-      <li>Reliable (fault-tolerant)</li>
-      <li>Efficient (concurrent)</li>
-    </ul>
+    <p>These computers are usually physically separate, sometimes over huge distances.</p>
+    <p>These components communicate by passing messages.</p>
+    <h3>Benefits</h3>
+    <div class="distributed">
+      <ul>
+        <li>Scalable</li>
+        <li>Reliable (fault-tolerant)</li>
+        <li>Efficient (concurrent)</li>
+      </ul>
+      <img src="./assets/distributed.png" class="distributed" />    </div>
   </Slide>
   <Slide>
     <h1>Joe Armstrong</h1>
@@ -273,16 +278,26 @@ export default {
 h1 {
   font-size: 5rem;
   max-width: 800px;
+  margin: 1rem;
 }
 
 h2 {
   font-size: 3rem;
   max-width: 800px;
+  margin: 1rem;
 }
 
-p {
-  font-size: 1.5rem;
+h3 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+p,
+li {
+  font-size: 1.4rem;
   max-width: 800px;
+  margin: 1.5rem;
 }
 
 img {
@@ -292,6 +307,17 @@ img {
 
 img.distributed {
   width: 400px;
+}
+
+div.distributed {
+  display: flex;
+  align-items: center;
+}
+
+.synchro__body {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
 }
 
 /* Works on Chrome/Edge/Safari */
