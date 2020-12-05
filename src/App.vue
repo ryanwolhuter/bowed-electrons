@@ -103,22 +103,36 @@
           </td>
         </tr>
         <tr>
-          <th scope="row">Data Formats</th>
-          <td>Numbers, text, colors, <br />
-          even MIDI</td>
+          <th scope="row">Formats</th>
+          <td>
+            Numbers, text, colors, <br />
+            even MIDI
+          </td>
           <td>1-byte integers (0-127)</td>
         </tr>
         <tr>
-          <th scope="row">Data Transfer</th>
-          <td>Local and wide area <br />
-          networks, (UDP, TCP, WebSockets, <br />
-          WebRTC, anything you like)</td>
+          <th scope="row">Time-tagging</th>
+          <td>Yes</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <th scope="row">Transport</th>
+          <td>
+            Local and wide area <br />
+            networks, (UDP, TCP, WebSockets, <br />
+            WebRTC, anything you like)
+          </td>
           <td>Cable-based transfer</td>
         </tr>
         <tr>
           <th scope="row">Number of Channels</th>
           <td>Unlimited</td>
           <td>16</td>
+        </tr>
+        <tr>
+          <th scope="row">Transfer Speed</th>
+          <td>Gigabit speed</td>
+          <td>31,250 bits / second</td>
         </tr>
       </tbody>
     </table>
