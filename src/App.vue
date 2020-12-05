@@ -37,13 +37,16 @@
     <p>It only works when we know and follow the rules.</p>
   </Slide>
   <Slide>
+    <div class="distributed__content">
     <h2>What is a Distributed System?</h2>
-    <p>A system whose components are located on separate computers.</p>
+
+      <p>A system whose components are located on separate computers.</p>
     <p>
       These computers are usually physically separate, sometimes over huge
       distances.
     </p>
     <p>These components communicate by passing messages.</p>
+    </div>
     <div class="distributed">
       <ul>
         <li>Scalable</li>
@@ -382,7 +385,7 @@ img {
 }
 
 img.distributed {
-  width: 400px;
+  width: 300px;
 }
 
 img.server {
@@ -396,6 +399,14 @@ img.code {
 div.distributed {
   display: flex;
   align-items: center;
+}
+
+.distributed__content > h2 {
+  font-size: 2rem;
+}
+
+.distributed__content > p {
+  font-size: 1rem;
 }
 
 div.iot > p {
