@@ -20,7 +20,7 @@
           messages.
         </p>
         <p>
-          We can learn from the effectiveness of the stick for controlling
+          We can learn from the effectiveness of the baton for controlling
           digital music performances.
         </p>
       </div>
@@ -28,7 +28,13 @@
     </div>
   </Slide>
   <Slide>
-    <h1>Message Passing In Music</h1>
+    <h2>Message Passing In Music</h2>
+
+    <p>
+      Sending musical signals amongst musicians is a form of message passing.
+    </p>
+
+    <p>It only works when we know and follow the rules.</p>
   </Slide>
   <Slide>
     <h2>What is a Distributed System?</h2>
@@ -49,6 +55,14 @@
   </Slide>
   <Slide>
     <h1>Joe Armstrong</h1>
+    <div class="joe">
+      <p>Invented a programming language for distributed telecoms systems.</p>
+      <p>
+        Pioneered the idea of a distributed instrument with Sam Aaron (Sonic
+        Pi).
+      </p>
+      <p>And then he was gone.</p>
+    </div>
     <img src="./assets/joe_armstrong.jpg" />
     <img src="./assets/joe_armstrong.png" />
   </Slide>
@@ -145,20 +159,22 @@
     </ul>
   </Slide>
   <Slide>
-    <h1>How to Send OSC Messages</h1>
-    <p>(The SuperCollider way)</p>
+    <h1>Anatomy of an OSC Message</h1>
+    <p>An Address (where is this message going?)</p>
+    <p>A type tag (what am I sending?)</p>
+    <p>The data itself.</p>
   </Slide>
   <Slide>
-    <h1>Erlang? Never heard of it</h1>
-  </Slide>
-  <Slide>
-    <h1>What is Elixir?</h1>
+    <h1>Erlang? Elixir?</h1>
+    <img src="./assets/carbon.png" class="code" />
   </Slide>
   <Slide>
     <h1>Elixir and the Internet of Things</h1>
-    <p>Phoenix?</p>
-    <p>Nerves?</p>
-    <p>Membrane?</p>
+    <div class="iot">
+      <p>Phoenix?</p>
+      <p>Nerves?</p>
+      <p>Membrane?</p>
+    </div>
   </Slide>
   <Slide>
     <h2>The Internet of Musical Things</h2>
@@ -174,7 +190,7 @@
   <Slide>
     <h2>"Challenges"</h2>
     <p>(and how Elixir can solve them)</p>
-    <ul>
+    <ul class="challenges">
       <li><em>The IoMusT Ontology (Web Semantics)</em></li>
       <li><em>IoMusT: Vision and Challenges (IEEE)</em></li>
     </ul>
@@ -183,9 +199,15 @@
       milliseconds"
     </p>
 
-    <p>"The synchronization of audio streams produced by devices that don't share the same clock."</p>
+    <p>
+      "The synchronization of audio streams produced by devices that don't share
+      the same clock."
+    </p>
 
-    <p>"Even if devices initially share the same clock, they need a re-synchronization procedure from time to time."</p>
+    <p>
+      "Even if devices initially share the same clock, they need a
+      re-synchronization procedure from time to time."
+    </p>
 
     <p>"There are many different audio and visual file formats."</p>
   </Slide>
@@ -208,18 +230,18 @@
   <Slide>
     <h2>Future Projects</h2>
     <ul>
-      <li>
-        Composition with many music programs simultaneously.
-      </li>
+      <li>Composition with many music programs simultaneously.</li>
 
       <li>
-        Worldwide real-time collaboration of electronic musicians, DJs, visual artists and live coders.
+        Worldwide real-time collaboration of electronic musicians, DJs, visual
+        artists and live coders.
       </li>
 
       <li>Synchronized performances in different countries.</li>
 
       <li>
-        Distributing computationally heavy composition and synthesis tasks across multiple machines.
+        Distributing computationally heavy composition and synthesis tasks
+        across multiple machines.
       </li>
     </ul>
   </Slide>
@@ -233,6 +255,11 @@
       <li>Membrane</li>
       <li>Raspberry Pi and Beagleboard</li>
     </ul>
+  </Slide>
+  <Slide>
+    <h1>Thank You</h1>
+    <p><em>tamara.ringas@gmail.com</em></p>
+    <p><em>dev@ryanwolhuter.com</em></p>
   </Slide>
 </template>
 
@@ -362,9 +389,25 @@ img.server {
   width: 100%;
 }
 
+img.code {
+  width: 90%;
+}
+
 div.distributed {
   display: flex;
   align-items: center;
+}
+
+div.iot > p {
+  font-size: 2rem;
+}
+
+ul.challenges {
+  font-weight: bold;
+}
+
+ul.challenges > li {
+  font-size: 1.7rem;
 }
 
 .synchro__body {
@@ -379,6 +422,7 @@ table {
   border-collapse: collapse;
   border: 2px solid white;
   border-radius: 1rem;
+  font-size: 1.6rem;
 }
 
 th,
