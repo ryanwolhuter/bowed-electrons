@@ -185,35 +185,22 @@
     </p>
   </Slide>
   <Slide>
-    <h2>"Issues" with the Internet of Musical Things</h2>
+    <h2>"Challenges" with the Internet of Musical Things</h2>
     <h3>(and how Elixir can solve them)</h3>
   </Slide>
   <Slide>
-    <h1>Implementation Details</h1>
     <img src="./assets/server.png" class="server" />
   </Slide>
   <Slide>
-    <h2>Anthropogenic Soundscapes for IoMusT</h2>
+    <h2>Research Project</h2>
     <p>
-      Creating a distributed network through Elixir and OSC laid the foundations
-      for our ongoing interdisciplinary research project. We are creating a
-      distributed instrument for an audio-visual composition.
+      A distributed instrument for an audio-visual composition.
     </p>
     <p>
-      The music will be a soundscape of a collage of ‘sound slides’ from
-      electro-magnetic radiation recordings and melodies played by SuperCollider
-      on instruments synthesised through the network.
+      The composition, <em>Anthropogenic Soundscapes for IoMusT</em>, will be a collage of "sound slides" from electro-magnetic radiation recordings and melodies played by SuperCollider.
     </p>
     <p>
-      The project will culminate in a performance and then be stored on a
-      website with code for other musicians who may be interested in similar
-      projects.
-    </p>
-    <p>
-      The inspiration for the musical elements of the composition came from the
-      Martin Rumori installation “Promenade, Anecdote” wherein he explored the
-      concepts of ‘anecdotal music’ and ‘Klangias’ (everyday sound recordings
-      that anyone could take, as they would take holiday pictures).
+      Our project is open source, and we are inviting other musicians and coders to join us.
     </p>
   </Slide>
   <Slide>
@@ -367,7 +354,7 @@ img.distributed {
 }
 
 img.server {
-  width: 700px;
+  width: 100%;
 }
 
 div.distributed {
