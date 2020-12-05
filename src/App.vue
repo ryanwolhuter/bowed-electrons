@@ -1,5 +1,5 @@
 <template>
-  <!-- <Particles id="tsparticles" :options="particlesOptions" /> -->
+  <Particles id="tsparticles" :options="particlesOptions" />
   <Slide>
     <h1>Toolset for the Internet of Musical Things</h1>
   </Slide>
@@ -190,6 +190,7 @@
   </Slide>
   <Slide>
     <h1>Implementation Details</h1>
+    <img src="./assets/server.png" class="server" />
   </Slide>
   <Slide>
     <h2>Anthropogenic Soundscapes for IoMusT</h2>
@@ -328,7 +329,7 @@ export default {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 1500vh;
+  height: 1000vh;
 }
 
 h1 {
@@ -363,6 +364,10 @@ img {
 
 img.distributed {
   width: 400px;
+}
+
+img.server {
+  width: 700px;
 }
 
 div.distributed {

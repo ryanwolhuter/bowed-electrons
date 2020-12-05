@@ -26,7 +26,7 @@ export default {
   width: 80vw;
   height: 80vh;
   padding: 4rem;
-  background: hsla(0, 100%, 100%, 0.5);
+  background: hsla(173, 10%, 83%, 0.5);
   border-radius: 1rem;
   backdrop-filter: blur(5px);
 
