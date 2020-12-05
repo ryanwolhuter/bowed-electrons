@@ -38,7 +38,6 @@
       distances.
     </p>
     <p>These components communicate by passing messages.</p>
-    <h3>Benefits</h3>
     <div class="distributed">
       <ul>
         <li>Scalable</li>
