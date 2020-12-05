@@ -1,4 +1,5 @@
 <template>
+  <Particles id="tsparticles" :options="particlesOptions" />
   <Slide>
     <h1>Heading</h1>
     <p>Text</p>
@@ -17,6 +18,54 @@ export default {
   name: 'App',
   components: {
     Slide
+  },
+  data() {
+    return {
+      particlesOptions: {
+      fpsLimit: 60,
+      particles: {
+        color: {
+          value: '#ffffff',
+        },
+        links: {
+          color: '#ffffff',
+          distance: 150,
+          enable: true,
+          opacity: 0.5,
+          width: 1,
+        },
+        collisions: {
+          enable: true,
+        },
+        move: {
+          direction: 'none',
+          enable: true,
+          outMode: 'bounce',
+          random: false,
+          speed: 6,
+          straight: false,
+        },
+        number: {
+          density: {
+            enable: true,
+            value_area: 800,
+          },
+          value: 20,
+        },
+        opacity: {
+          value: 0.5,
+        },
+        shape: {
+          type: 'circle',
+        },
+        size: {
+          random: true,
+          value: 5,
+        },
+      },
+      detectRetina: true,
+    }
+    }
   }
 }
 </script>
@@ -28,6 +77,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   background: teal;
   color: #ffffff;
+  height: fit-content;
 }
 
 * {
@@ -37,6 +87,14 @@ export default {
   box-sizing: border-box;
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
+}
+
+#tsparticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 200vh;
 }
 
 /* Works on Chrome/Edge/Safari */
